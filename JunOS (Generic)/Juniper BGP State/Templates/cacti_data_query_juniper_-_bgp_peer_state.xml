@@ -1,64 +1,38 @@
 <cacti>	
-	<hash_040020633ca6d4db96d9010f160d7c9bcb1d87>
-		<name>Juniper - PEM Stats</name>
-		<description>Juniper - PEM Stats</description>
-		<xml_path>&lt;path_cacti&gt;/resource/snmp_queries/juniper_pem_stats.xml</xml_path>
+	<hash_04002054fc05d2a7344e6cc5e49f37bf148a73>
+		<name>Juniper - BGP Peer State</name>
+		<description>Juniper - BGP Peer State</description>
+		<xml_path>&lt;path_cacti&gt;/resource/snmp_queries/juniper_bgp_peer_state.xml</xml_path>
 		<data_input_id>hash_030020bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 		<graphs>
-			<hash_110020304c0e953c9bec6f3f352533c9c86275>
-				<name>Temperature</name>
-				<graph_template_id>hash_000020335d0f6c068595c0925f4751eee9c671</graph_template_id>
+			<hash_110020fb57412edaab18a58f3387134d12ff58>
+				<name>Juniper - BGP Peer State</name>
+				<graph_template_id>hash_0000206befc92a0884d473acf7266367988520</graph_template_id>
 				<rrd>
 					<item_000>
-						<snmp_field_name>jnxOperatingTemp</snmp_field_name>
-						<data_template_id>hash_010020e217193d5234ec17132f87acb9d7dfb2</data_template_id>
-						<data_template_rrd_id>hash_080020630c32c8be50a363adba69069798efb7</data_template_rrd_id>
+						<snmp_field_name>jnxBgpM2PeerState</snmp_field_name>
+						<data_template_id>hash_010020b5eedaaea62db6d9ea18276ff10ca923</data_template_id>
+						<data_template_rrd_id>hash_0800205402d969d4e7a8b29c2fd7728fabf919</data_template_rrd_id>
 					</item_000>
 				</rrd>
 				<sv_graph>
-					<hash_12002090d5038cb5187a9cd2b540d5fd72fd63>
+					<hash_120020ec81d6dbd439b762f0cc7ae845b199e2>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| Temperature</text>
-					</hash_12002090d5038cb5187a9cd2b540d5fd72fd63>
+						<sequence>2</sequence>
+						<text>|host_description| - BGP Peer |query_PeerIP| State</text>
+					</hash_120020ec81d6dbd439b762f0cc7ae845b199e2>
 				</sv_graph>
 				<sv_data_source>
-					<hash_1300208e2f81916d943fef35e39b9d9cace279>
+					<hash_130020081828b131fa0aee12ac103bf053d3fc>
 						<field_name>name</field_name>
-						<data_template_id>hash_010020e217193d5234ec17132f87acb9d7dfb2</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| Temperature</text>
-					</hash_1300208e2f81916d943fef35e39b9d9cace279>
+						<data_template_id>hash_010020b5eedaaea62db6d9ea18276ff10ca923</data_template_id>
+						<sequence>2</sequence>
+						<text>|host_description| - BGP Peer |query_PeerIP| State</text>
+					</hash_130020081828b131fa0aee12ac103bf053d3fc>
 				</sv_data_source>
-			</hash_110020304c0e953c9bec6f3f352533c9c86275>
-			<hash_110020a9b2b365b063b17d33aa4a5080b4d529>
-				<name>Operational State</name>
-				<graph_template_id>hash_000020c9dceb4be32910803d9b2cbf3c387bbe</graph_template_id>
-				<rrd>
-					<item_000>
-						<snmp_field_name>jnxOperatingStateOrdered</snmp_field_name>
-						<data_template_id>hash_010020a45613b4e510418a8efff3804eec6c9d</data_template_id>
-						<data_template_rrd_id>hash_08002053769e499854055c6dcdf9690e7f43af</data_template_rrd_id>
-					</item_000>
-				</rrd>
-				<sv_graph>
-					<hash_120020212ebbe1701e6102a5749c24d858e93b>
-						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| State</text>
-					</hash_120020212ebbe1701e6102a5749c24d858e93b>
-				</sv_graph>
-				<sv_data_source>
-					<hash_1300209a8dfd1c8dce1efc314fc58d57d3f9cd>
-						<field_name>name</field_name>
-						<data_template_id>hash_010020a45613b4e510418a8efff3804eec6c9d</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| State</text>
-					</hash_1300209a8dfd1c8dce1efc314fc58d57d3f9cd>
-				</sv_data_source>
-			</hash_110020a9b2b365b063b17d33aa4a5080b4d529>
+			</hash_110020fb57412edaab18a58f3387134d12ff58>
 		</graphs>
-	</hash_040020633ca6d4db96d9010f160d7c9bcb1d87>
+	</hash_04002054fc05d2a7344e6cc5e49f37bf148a73>
 	<hash_030020bf566c869ac6443b0c75d1c32b5a350e>
 		<name>Get SNMP Data (Indexed)</name>
 		<type_id>3</type_id>
@@ -183,153 +157,11 @@
 			</hash_0700205240353b8f7f259acaf30e6229bc14e7>
 		</fields>
 	</hash_030020bf566c869ac6443b0c75d1c32b5a350e>
-	<hash_000020335d0f6c068595c0925f4751eee9c671>
-		<name>Juniper Hardware Stats - Temperature</name>
+	<hash_0000206befc92a0884d473acf7266367988520>
+		<name>Juniper - BGP Peer State</name>
 		<graph>
 			<t_title></t_title>
-			<title>Juniper Hardware Stats - Temperature</title>
-			<t_image_format_id></t_image_format_id>
-			<image_format_id>1</image_format_id>
-			<t_height></t_height>
-			<height>120</height>
-			<t_width></t_width>
-			<width>500</width>
-			<t_slope_mode></t_slope_mode>
-			<slope_mode>on</slope_mode>
-			<t_auto_scale></t_auto_scale>
-			<auto_scale>on</auto_scale>
-			<t_auto_scale_opts></t_auto_scale_opts>
-			<auto_scale_opts>2</auto_scale_opts>
-			<t_auto_scale_log></t_auto_scale_log>
-			<auto_scale_log></auto_scale_log>
-			<t_scale_log_units></t_scale_log_units>
-			<scale_log_units></scale_log_units>
-			<t_auto_scale_rigid></t_auto_scale_rigid>
-			<auto_scale_rigid></auto_scale_rigid>
-			<t_auto_padding></t_auto_padding>
-			<auto_padding>on</auto_padding>
-			<t_export></t_export>
-			<export>on</export>
-			<t_upper_limit></t_upper_limit>
-			<upper_limit>100</upper_limit>
-			<t_lower_limit></t_lower_limit>
-			<lower_limit>0</lower_limit>
-			<t_base_value></t_base_value>
-			<base_value>1000</base_value>
-			<t_unit_value></t_unit_value>
-			<unit_value></unit_value>
-			<t_unit_exponent_value></t_unit_exponent_value>
-			<unit_exponent_value></unit_exponent_value>
-			<t_vertical_label></t_vertical_label>
-			<vertical_label>Celcius</vertical_label>
-		</graph>
-		<items>
-			<hash_1000209a4205dfd65342ca8ff8f52975dcff52>
-				<task_item_id>hash_080020630c32c8be50a363adba69069798efb7</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<graph_type_id>1</graph_type_id>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<value></value>
-				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format>|query_jnxOperatingDescr|</text_format>
-				<hard_return>on</hard_return>
-				<sequence>1</sequence>
-			</hash_1000209a4205dfd65342ca8ff8f52975dcff52>
-			<hash_100020150ed968f7a6eee91e9cb1adaeced782>
-				<task_item_id>hash_080020630c32c8be50a363adba69069798efb7</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<graph_type_id>1</graph_type_id>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<value></value>
-				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format></text_format>
-				<hard_return>on</hard_return>
-				<sequence>2</sequence>
-			</hash_100020150ed968f7a6eee91e9cb1adaeced782>
-			<hash_1000203b7c2319a56228106ea3ffa1f0386176>
-				<task_item_id>hash_080020630c32c8be50a363adba69069798efb7</task_item_id>
-				<color_id>FF7D00</color_id>
-				<alpha>FF</alpha>
-				<graph_type_id>4</graph_type_id>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<value></value>
-				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format>Temperature (C)</text_format>
-				<hard_return></hard_return>
-				<sequence>3</sequence>
-			</hash_1000203b7c2319a56228106ea3ffa1f0386176>
-			<hash_1000205b6d59cb475bc443cedaaf89a282e0e8>
-				<task_item_id>hash_080020630c32c8be50a363adba69069798efb7</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<graph_type_id>9</graph_type_id>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<value></value>
-				<gprint_id>hash_06002019414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format>Current:</text_format>
-				<hard_return></hard_return>
-				<sequence>4</sequence>
-			</hash_1000205b6d59cb475bc443cedaaf89a282e0e8>
-			<hash_1000203fc3dea2c313e1b667a936daf768f943>
-				<task_item_id>hash_080020630c32c8be50a363adba69069798efb7</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<graph_type_id>9</graph_type_id>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<value></value>
-				<gprint_id>hash_06002019414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format>Average:</text_format>
-				<hard_return></hard_return>
-				<sequence>5</sequence>
-			</hash_1000203fc3dea2c313e1b667a936daf768f943>
-			<hash_100020dd4aa93c19d6141baf21127618d63c24>
-				<task_item_id>hash_080020630c32c8be50a363adba69069798efb7</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<graph_type_id>9</graph_type_id>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<value></value>
-				<gprint_id>hash_06002019414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format>Maximum:</text_format>
-				<hard_return>on</hard_return>
-				<sequence>6</sequence>
-			</hash_100020dd4aa93c19d6141baf21127618d63c24>
-			<hash_100020020c214a7bf6815a01c77d0ecf78c270>
-				<task_item_id>hash_080020630c32c8be50a363adba69069798efb7</task_item_id>
-				<color_id>FF7D00</color_id>
-				<alpha>4C</alpha>
-				<graph_type_id>7</graph_type_id>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<value></value>
-				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format></text_format>
-				<hard_return></hard_return>
-				<sequence>7</sequence>
-			</hash_100020020c214a7bf6815a01c77d0ecf78c270>
-		</items>
-		<inputs>
-			<hash_090020f57df5aee3b42ad37e215d1eebaee218>
-				<name>Data Source [Temperature]</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items>hash_000020020c214a7bf6815a01c77d0ecf78c270|hash_000020dd4aa93c19d6141baf21127618d63c24|hash_0000203fc3dea2c313e1b667a936daf768f943|hash_0000205b6d59cb475bc443cedaaf89a282e0e8|hash_0000203b7c2319a56228106ea3ffa1f0386176|hash_0000209a4205dfd65342ca8ff8f52975dcff52|hash_000020150ed968f7a6eee91e9cb1adaeced782</items>
-			</hash_090020f57df5aee3b42ad37e215d1eebaee218>
-		</inputs>
-	</hash_000020335d0f6c068595c0925f4751eee9c671>
-	<hash_000020c9dceb4be32910803d9b2cbf3c387bbe>
-		<name>Juniper Hardware Stats - Operational State</name>
-		<graph>
-			<t_title></t_title>
-			<title>Juniper Hardware Stats - Operational State</title>
+			<title>|host_description| - BGP Peer State</title>
 			<t_image_format_id></t_image_format_id>
 			<image_format_id>1</image_format_id>
 			<t_height></t_height>
@@ -366,34 +198,8 @@
 			<vertical_label>State</vertical_label>
 		</graph>
 		<items>
-			<hash_1000200dabea64832f140f037d00f1ac5e4e9c>
-				<task_item_id>0</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<graph_type_id>1</graph_type_id>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<value></value>
-				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format>|query_jnxOperatingDescr|</text_format>
-				<hard_return>on</hard_return>
-				<sequence>1</sequence>
-			</hash_1000200dabea64832f140f037d00f1ac5e4e9c>
-			<hash_100020989884224fbdb35f9dcce9a8e785aa98>
-				<task_item_id>0</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<graph_type_id>1</graph_type_id>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<value></value>
-				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format></text_format>
-				<hard_return>on</hard_return>
-				<sequence>2</sequence>
-			</hash_100020989884224fbdb35f9dcce9a8e785aa98>
-			<hash_100020794eb38987d8c8ca0b31b11ebe3eb7f2>
-				<task_item_id>hash_08002053769e499854055c6dcdf9690e7f43af</task_item_id>
+			<hash_100020bd7fb2a40a7372e7242114c5b7b1d387>
+				<task_item_id>hash_0800205402d969d4e7a8b29c2fd7728fabf919</task_item_id>
 				<color_id>000000</color_id>
 				<alpha>FF</alpha>
 				<graph_type_id>5</graph_type_id>
@@ -401,12 +207,12 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format>Operational State</text_format>
+				<text_format>BGP Peer State</text_format>
 				<hard_return></hard_return>
-				<sequence>5</sequence>
-			</hash_100020794eb38987d8c8ca0b31b11ebe3eb7f2>
-			<hash_100020be8636d513159a67a33a0410873f2f11>
-				<task_item_id>hash_08002053769e499854055c6dcdf9690e7f43af</task_item_id>
+				<sequence>1</sequence>
+			</hash_100020bd7fb2a40a7372e7242114c5b7b1d387>
+			<hash_10002039f75d4039ef36bda9dba00204eae278>
+				<task_item_id>hash_0800205402d969d4e7a8b29c2fd7728fabf919</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<graph_type_id>9</graph_type_id>
@@ -416,9 +222,9 @@
 				<gprint_id>hash_06002019414480d6897c8731c7dc6c5310653e</gprint_id>
 				<text_format>Current:</text_format>
 				<hard_return>on</hard_return>
-				<sequence>6</sequence>
-			</hash_100020be8636d513159a67a33a0410873f2f11>
-			<hash_100020a17916dbb0a1abf01c768b814a5a8669>
+				<sequence>2</sequence>
+			</hash_10002039f75d4039ef36bda9dba00204eae278>
+			<hash_100020b3d49b7acc46765a3ede78b9a033be8c>
 				<task_item_id>0</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
@@ -429,9 +235,48 @@
 				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<text_format></text_format>
 				<hard_return>on</hard_return>
-				<sequence>7</sequence>
-			</hash_100020a17916dbb0a1abf01c768b814a5a8669>
-			<hash_100020644a636046a91b3e2e33dff2ffd264f1>
+				<sequence>3</sequence>
+			</hash_100020b3d49b7acc46765a3ede78b9a033be8c>
+			<hash_100020b78e578cd9e14b8651a95a1958dd05ce>
+				<task_item_id>0</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>1</graph_type_id>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Local IP: |query_LocalIP| AS: |query_jnxBgpM2PeerLocalAs|</text_format>
+				<hard_return>on</hard_return>
+				<sequence>4</sequence>
+			</hash_100020b78e578cd9e14b8651a95a1958dd05ce>
+			<hash_100020f8dfa039cb9b7080558f69f18107b788>
+				<task_item_id>0</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>1</graph_type_id>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Peer IP:  |query_PeerIP| AS: |query_jnxBgpM2PeerRemoteAs|</text_format>
+				<hard_return>on</hard_return>
+				<sequence>5</sequence>
+			</hash_100020f8dfa039cb9b7080558f69f18107b788>
+			<hash_100020a40b96743eb5cb56d17b46845a7209cb>
+				<task_item_id>0</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>1</graph_type_id>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format></text_format>
+				<hard_return>on</hard_return>
+				<sequence>6</sequence>
+			</hash_100020a40b96743eb5cb56d17b46845a7209cb>
+			<hash_100020203890c560aa8ada4a393d4375494db0>
 				<task_item_id>0</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
@@ -442,9 +287,22 @@
 				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<text_format>State Key</text_format>
 				<hard_return>on</hard_return>
+				<sequence>7</sequence>
+			</hash_100020203890c560aa8ada4a393d4375494db0>
+			<hash_1000206601a054f5e5acfd994b5fd278b68183>
+				<task_item_id>0</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>1</graph_type_id>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>1 - idle    </text_format>
+				<hard_return></hard_return>
 				<sequence>8</sequence>
-			</hash_100020644a636046a91b3e2e33dff2ffd264f1>
-			<hash_100020cf4025c2e80fd2f8f242b27cc8f03fa8>
+			</hash_1000206601a054f5e5acfd994b5fd278b68183>
+			<hash_10002019c7e4fd2813cf265dec7454ac96aade>
 				<task_item_id>0</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
@@ -453,11 +311,11 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format>1 - Running   2 - Standby 3 - Ready</text_format>
-				<hard_return>on</hard_return>
+				<text_format>2 - connect    </text_format>
+				<hard_return></hard_return>
 				<sequence>9</sequence>
-			</hash_100020cf4025c2e80fd2f8f242b27cc8f03fa8>
-			<hash_10002022af0ae3cb9d05a0143d986f0a3dd45a>
+			</hash_10002019c7e4fd2813cf265dec7454ac96aade>
+			<hash_1000203b1e052ac5dff317e2450e50e5afeff2>
 				<task_item_id>0</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
@@ -466,11 +324,11 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format>4 - FullSpeed 5 - Reset   6 - Down</text_format>
+				<text_format>3 - active</text_format>
 				<hard_return>on</hard_return>
 				<sequence>10</sequence>
-			</hash_10002022af0ae3cb9d05a0143d986f0a3dd45a>
-			<hash_100020f3e1d16a193851e6e47cfbd4878b5cb8>
+			</hash_1000203b1e052ac5dff317e2450e50e5afeff2>
+			<hash_1000203e83785c99016f4418af3b9506bf6def>
 				<task_item_id>0</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
@@ -479,25 +337,51 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format>7 - Unknown</text_format>
-				<hard_return>on</hard_return>
+				<text_format>4 - opensent</text_format>
+				<hard_return></hard_return>
 				<sequence>11</sequence>
-			</hash_100020f3e1d16a193851e6e47cfbd4878b5cb8>
+			</hash_1000203e83785c99016f4418af3b9506bf6def>
+			<hash_100020e1a6839f5561f4e255a15fc6c8c42880>
+				<task_item_id>0</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>1</graph_type_id>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>5 - openconfirm</text_format>
+				<hard_return></hard_return>
+				<sequence>12</sequence>
+			</hash_100020e1a6839f5561f4e255a15fc6c8c42880>
+			<hash_100020f442f99bee3f3a0b8ccfa1c5f6bdc753>
+				<task_item_id>0</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>1</graph_type_id>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060020e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>6 - established</text_format>
+				<hard_return>on</hard_return>
+				<sequence>13</sequence>
+			</hash_100020f442f99bee3f3a0b8ccfa1c5f6bdc753>
 		</items>
 		<inputs>
-			<hash_09002092ae25d9815a7e3e6419cdcff698ec7a>
-				<name>Data Source [OperationalState]</name>
+			<hash_090020491467ee1be4dcc22a5d4b3756b9f85a>
+				<name>Data Source [PeerState]</name>
 				<description></description>
 				<column_name>task_item_id</column_name>
-				<items>hash_000020be8636d513159a67a33a0410873f2f11|hash_000020794eb38987d8c8ca0b31b11ebe3eb7f2</items>
-			</hash_09002092ae25d9815a7e3e6419cdcff698ec7a>
+				<items>hash_000020bd7fb2a40a7372e7242114c5b7b1d387|hash_00002039f75d4039ef36bda9dba00204eae278</items>
+			</hash_090020491467ee1be4dcc22a5d4b3756b9f85a>
 		</inputs>
-	</hash_000020c9dceb4be32910803d9b2cbf3c387bbe>
-	<hash_010020e217193d5234ec17132f87acb9d7dfb2>
-		<name>Juniper - Hardware Stats - Temperature</name>
+	</hash_0000206befc92a0884d473acf7266367988520>
+	<hash_010020b5eedaaea62db6d9ea18276ff10ca923>
+		<name>Juniper - BGP Peer State</name>
 		<ds>
-			<t_name></t_name>
-			<name>|host_description| - Hardware Stats - Temperature</name>
+			<t_name>on</t_name>
+			<name>|host_description| - BGP Peer State</name>
 			<data_input_id>hash_030020bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 			<t_rra_id></t_rra_id>
 			<t_rrd_step></t_rrd_step>
@@ -507,9 +391,9 @@
 			<rra_items>hash_150020c21df5178e5c955013591239eb0afd46|hash_1500200d9c0af8b8acdc7807943937b3208e29|hash_1500206fc2d038fb42950138b0ce3e9874cc60|hash_150020e36f3adb9f152adfa5dc50fd2b23337e|hash_150020283ea2bf1634d92ce081ec82a634f513</rra_items>
 		</ds>
 		<items>
-			<hash_080020630c32c8be50a363adba69069798efb7>
+			<hash_0800205402d969d4e7a8b29c2fd7728fabf919>
 				<t_data_source_name></t_data_source_name>
-				<data_source_name>Temperature</data_source_name>
+				<data_source_name>PeerState</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
 				<rrd_minimum>U</rrd_minimum>
 				<t_rrd_maximum></t_rrd_maximum>
@@ -520,7 +404,7 @@
 				<rrd_heartbeat>120</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
 				<data_input_field_id>0</data_input_field_id>
-			</hash_080020630c32c8be50a363adba69069798efb7>
+			</hash_0800205402d969d4e7a8b29c2fd7728fabf919>
 		</items>
 		<data>
 			<item_000>
@@ -589,104 +473,7 @@
 				<value></value>
 			</item_012>
 		</data>
-	</hash_010020e217193d5234ec17132f87acb9d7dfb2>
-	<hash_010020a45613b4e510418a8efff3804eec6c9d>
-		<name>Juniper - Hardware Stats - Operational State</name>
-		<ds>
-			<t_name></t_name>
-			<name>|host_description| - Hardware Stats - Operational State</name>
-			<data_input_id>hash_030020bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
-			<t_rra_id></t_rra_id>
-			<t_rrd_step></t_rrd_step>
-			<rrd_step>60</rrd_step>
-			<t_active></t_active>
-			<active>on</active>
-			<rra_items>hash_150020c21df5178e5c955013591239eb0afd46|hash_1500200d9c0af8b8acdc7807943937b3208e29|hash_1500206fc2d038fb42950138b0ce3e9874cc60|hash_150020e36f3adb9f152adfa5dc50fd2b23337e|hash_150020283ea2bf1634d92ce081ec82a634f513</rra_items>
-		</ds>
-		<items>
-			<hash_08002053769e499854055c6dcdf9690e7f43af>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>OperationalState</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>U</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>120</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>0</data_input_field_id>
-			</hash_08002053769e499854055c6dcdf9690e7f43af>
-		</items>
-		<data>
-			<item_000>
-				<data_input_field_id>hash_0700205240353b8f7f259acaf30e6229bc14e7</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_000>
-			<item_001>
-				<data_input_field_id>hash_0700203a33d4fc65b8329ab2ac46a36da26b72</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_001>
-			<item_002>
-				<data_input_field_id>hash_0700206b13ac0a0194e171d241d4b06f913158</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_002>
-			<item_003>
-				<data_input_field_id>hash_0700202cf7129ad3ff819a7a7ac189bee48ce8</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_003>
-			<item_004>
-				<data_input_field_id>hash_070020c1f36ee60c3dc98945556d57f26e475b</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_004>
-			<item_005>
-				<data_input_field_id>hash_070020e6deda7be0f391399c5130e7c4a48b28</data_input_field_id>
-				<t_value>on</t_value>
-				<value></value>
-			</item_005>
-			<item_006>
-				<data_input_field_id>hash_070020cbbe5c1ddfb264a6e5d509ce1c78c95f</data_input_field_id>
-				<t_value>on</t_value>
-				<value></value>
-			</item_006>
-			<item_007>
-				<data_input_field_id>hash_0700206027a919c7c7731fbe095b6f53ab127b</data_input_field_id>
-				<t_value>on</t_value>
-				<value></value>
-			</item_007>
-			<item_008>
-				<data_input_field_id>hash_070020b5c23f246559df38662c255f4aa21d6b</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_008>
-			<item_009>
-				<data_input_field_id>hash_0700201cc1493a6781af2c478fa4de971531cf</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_009>
-			<item_010>
-				<data_input_field_id>hash_070020f4facc5e2ca7ebee621f09bc6d9fc792</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_010>
-			<item_011>
-				<data_input_field_id>hash_070020acb449d1451e8a2a655c2c99d31142c7</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_011>
-			<item_012>
-				<data_input_field_id>hash_070020617cdc8a230615e59f06f361ef6e7728</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_012>
-		</data>
-	</hash_010020a45613b4e510418a8efff3804eec6c9d>
+	</hash_010020b5eedaaea62db6d9ea18276ff10ca923>
 	<hash_150020c21df5178e5c955013591239eb0afd46>
 		<name>Daily (5 Minute Average)</name>
 		<x_files_factor>0.5</x_files_factor>
