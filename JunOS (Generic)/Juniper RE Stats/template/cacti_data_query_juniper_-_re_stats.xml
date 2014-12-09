@@ -1,8 +1,8 @@
 <cacti>	
 	<hash_0400250ef63b05d1309438b14a87a171042e7e>
-		<name>Juniper - Routing Engine Stats</name>
-		<description>Juniper - Routing Engine Stats</description>
-		<xml_path>&lt;path_cacti&gt;/resource/snmp_queries/juniper_routing_engine_stats.xml</xml_path>
+		<name>Juniper - RE Stats</name>
+		<description>Juniper - RE Stats</description>
+		<xml_path>&lt;path_cacti&gt;/resource/snmp_queries/juniper_re_stats.xml</xml_path>
 		<data_input_id>hash_030025bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 		<graphs>
 			<hash_1100253a82273095956ce09b09d9e3e6012fd1>
@@ -812,7 +812,7 @@
 				<sequence>7</sequence>
 			</hash_100025d27b17e57b5b258a005977e011d4ce0d>
 			<hash_10002588e32cbf58b4e76199f2dbecaf2330bf>
-				<task_item_id>hash_08002556144527b6fef6dfba670fc2a2c2be4f</task_item_id>
+				<task_item_id>hash_080025117e063a86d0144366698bdeddb7c009</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<graph_type_id>1</graph_type_id>
