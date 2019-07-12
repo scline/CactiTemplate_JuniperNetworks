@@ -6,7 +6,7 @@
 		<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 		<graphs>
 			<hash_1100243a82273095956ce09b09d9e3e6012fd1>
-				<name>CPU Utalization</name>
+				<name>CPU Utilization</name>
 				<graph_template_id>hash_000024391d35380210b8f4ebf97c9d4e9f3859</graph_template_id>
 				<rrd>
 					<item_000>
@@ -16,19 +16,19 @@
 					</item_000>
 				</rrd>
 				<sv_graph>
-					<hash_120024294a1d8cb889a4d35dee8e4a74f112ce>
+					<hash_120024ab94a76ba6bd4e593665eb08f7ef0b08>
 						<field_name>title</field_name>
-						<sequence>2</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| Utalization</text>
-					</hash_120024294a1d8cb889a4d35dee8e4a74f112ce>
+						<sequence>3</sequence>
+						<text>|host_description| - |query_jnxOperatingDescr| Utilization</text>
+					</hash_120024ab94a76ba6bd4e593665eb08f7ef0b08>
 				</sv_graph>
 				<sv_data_source>
-					<hash_13002475d600a487528f0f598f979b7bcaf9f0>
+					<hash_1300246940e529c2532e41c9efe26c5dd85691>
 						<field_name>name</field_name>
 						<data_template_id>hash_010024bf06a07cf1e0bd4a3fae0c226288a64d</data_template_id>
-						<sequence>2</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| Utalization</text>
-					</hash_13002475d600a487528f0f598f979b7bcaf9f0>
+						<sequence>3</sequence>
+						<text>|host_description| - |query_jnxOperatingDescr| Utilization</text>
+					</hash_1300246940e529c2532e41c9efe26c5dd85691>
 				</sv_data_source>
 			</hash_1100243a82273095956ce09b09d9e3e6012fd1>
 			<hash_1100247d347af9bfb56488d7230c7627116c6f>
@@ -84,18 +84,18 @@
 				</sv_data_source>
 			</hash_110024cec4380ad96af82ea33ac375e9f7097e>
 			<hash_11002438385238beb5dcbc4fdeb217b999b60a>
-				<name>Memory Utalization</name>
+				<name>Memory Utilization</name>
 				<graph_template_id>hash_000024855695691d163a47ccddf6988812e651</graph_template_id>
 				<rrd>
 					<item_000>
-						<snmp_field_name>jnxOperatingMemory</snmp_field_name>
-						<data_template_id>hash_010024846a1663afbea751627f1fdb601f7f75</data_template_id>
-						<data_template_rrd_id>hash_08002416b0a82ed33a3624d0e2b1d902202f5a</data_template_rrd_id>
-					</item_000>
-					<item_001>
 						<snmp_field_name>jnxOperatingBuffer</snmp_field_name>
 						<data_template_id>hash_010024846a1663afbea751627f1fdb601f7f75</data_template_id>
 						<data_template_rrd_id>hash_080024c49add1179d2d2a8ee6f8b95a24ec4a5</data_template_rrd_id>
+					</item_000>
+					<item_001>
+						<snmp_field_name>jnxOperatingMemory</snmp_field_name>
+						<data_template_id>hash_010024846a1663afbea751627f1fdb601f7f75</data_template_id>
+						<data_template_rrd_id>hash_08002416b0a82ed33a3624d0e2b1d902202f5a</data_template_rrd_id>
 					</item_001>
 				</rrd>
 				<sv_graph>

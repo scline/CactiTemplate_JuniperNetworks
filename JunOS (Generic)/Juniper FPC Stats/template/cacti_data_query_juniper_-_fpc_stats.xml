@@ -6,7 +6,7 @@
 		<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 		<graphs>
 			<hash_110024342e246ae9d1fa86eeedb5d9d88a8236>
-				<name>CPU Utalization</name>
+				<name>CPU Utilization</name>
 				<graph_template_id>hash_000024391d35380210b8f4ebf97c9d4e9f3859</graph_template_id>
 				<rrd>
 					<item_000>
@@ -16,23 +16,23 @@
 					</item_000>
 				</rrd>
 				<sv_graph>
-					<hash_12002464cf5b0c3d38b025b64429685d56110c>
+					<hash_1200240af3f8dc1658431634c3d5c338735167>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| Utalization</text>
-					</hash_12002464cf5b0c3d38b025b64429685d56110c>
+						<sequence>2</sequence>
+						<text>|host_description| - |query_jnxOperatingDescr| Utilization</text>
+					</hash_1200240af3f8dc1658431634c3d5c338735167>
 				</sv_graph>
 				<sv_data_source>
-					<hash_130024f240bde5e42e1bfae43830f6e98fc7cb>
+					<hash_130024f92ac91c4cd4d731cd9d7f8f71554814>
 						<field_name>name</field_name>
 						<data_template_id>hash_010024bf06a07cf1e0bd4a3fae0c226288a64d</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| Utalization</text>
-					</hash_130024f240bde5e42e1bfae43830f6e98fc7cb>
+						<sequence>2</sequence>
+						<text>|host_description| - |query_jnxOperatingDescr| Utilization</text>
+					</hash_130024f92ac91c4cd4d731cd9d7f8f71554814>
 				</sv_data_source>
 			</hash_110024342e246ae9d1fa86eeedb5d9d88a8236>
 			<hash_1100245ef56ce88873fcc6b621eb0dacb5f032>
-				<name>Memory Utalization</name>
+				<name>Memory Utilization</name>
 				<graph_template_id>hash_000024855695691d163a47ccddf6988812e651</graph_template_id>
 				<rrd>
 					<item_000>

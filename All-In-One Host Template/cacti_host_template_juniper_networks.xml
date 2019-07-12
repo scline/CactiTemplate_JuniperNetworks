@@ -4468,7 +4468,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<text_format>CPU Utalization</text_format>
+				<text_format>CPU Utilization</text_format>
 				<hard_return></hard_return>
 				<sequence>1</sequence>
 			</hash_100024a5e268646a3af3522c1e74801f278a41>
@@ -13477,19 +13477,19 @@
 					</item_000>
 				</rrd>
 				<sv_graph>
-					<hash_120024ead5e100238dc4a072329d161fd76d81>
+					<hash_1200247c6edf58875dc933af2fdbcc2e5a89d5>
 						<field_name>title</field_name>
-						<sequence>3</sequence>
-						<text>|host_description| - |query_NodeDescr| Slot |query_SPUSlot| SPU - CPU</text>
-					</hash_120024ead5e100238dc4a072329d161fd76d81>
+						<sequence>4</sequence>
+						<text>|host_description| - |query_NodeDescr| SPU |query_SPUSlot|/|query_SPUIndex| - CPU</text>
+					</hash_1200247c6edf58875dc933af2fdbcc2e5a89d5>
 				</sv_graph>
 				<sv_data_source>
-					<hash_1300245685c9a5feb02354c63f0bd714d4c912>
+					<hash_130024f3fc711ab0627dff1194d61a9c1d2f87>
 						<field_name>name</field_name>
 						<data_template_id>hash_0100240262be47b3b61a462aaf6e53b00d2abe</data_template_id>
-						<sequence>2</sequence>
-						<text>|host_description| - SPU CPU - |query_NodeDescr|/|query_SPUSlot|</text>
-					</hash_1300245685c9a5feb02354c63f0bd714d4c912>
+						<sequence>3</sequence>
+						<text> |host_description| - SPU CPU - |query_NodeDescr|/|query_SPUSlot|/|query_SPUIndex|</text>
+					</hash_130024f3fc711ab0627dff1194d61a9c1d2f87>
 				</sv_data_source>
 			</hash_110024a05678a9c5bde4748ef85b902fb5d6fd>
 			<hash_110024e81aa685fad86a95aa0315fe9c6296ef>
@@ -13503,19 +13503,19 @@
 					</item_000>
 				</rrd>
 				<sv_graph>
-					<hash_12002412b4b0a7d226e5c9e96de41aa1f24a6c>
+					<hash_120024eb22c75e465274ca21b123ff0bef488f>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - |query_NodeDescr| Slot |query_SPUSlot| SPU - Memory</text>
-					</hash_12002412b4b0a7d226e5c9e96de41aa1f24a6c>
+						<sequence>2</sequence>
+						<text>|host_description| - |query_NodeDescr| SPU |query_SPUSlot|/|query_SPUIndex| - Memory</text>
+					</hash_120024eb22c75e465274ca21b123ff0bef488f>
 				</sv_graph>
 				<sv_data_source>
-					<hash_1300247c172f57430f317b257ee3b1895d1bef>
+					<hash_1300245aba6db9dbd74dce916afff6933a7f54>
 						<field_name>name</field_name>
 						<data_template_id>hash_0100243fc1cde0e84796493e93d646b9bb20e9</data_template_id>
-						<sequence>2</sequence>
-						<text>|host_description| - SPU Memory |query_NodeDescr|/|query_SPUSlot| </text>
-					</hash_1300247c172f57430f317b257ee3b1895d1bef>
+						<sequence>3</sequence>
+						<text>|host_description| - SPU Memory |query_NodeDescr|/|query_SPUSlot|/|query_SPUIndex|</text>
+					</hash_1300245aba6db9dbd74dce916afff6933a7f54>
 				</sv_data_source>
 			</hash_110024e81aa685fad86a95aa0315fe9c6296ef>
 			<hash_1100244608e05a155a987ca38de0227b0d1854>
@@ -13534,19 +13534,19 @@
 					</item_001>
 				</rrd>
 				<sv_graph>
-					<hash_1200243b27fc013df92888d7afe9c424efc253>
+					<hash_12002498655a23239108108757e62147be16bd>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - |query_NodeDescr| Slot |query_SPUSlot| SPU - Sessions</text>
-					</hash_1200243b27fc013df92888d7afe9c424efc253>
+						<sequence>2</sequence>
+						<text>|host_description| - |query_NodeDescr| SPU |query_SPUSlot|/|query_SPUIndex| - Sessions</text>
+					</hash_12002498655a23239108108757e62147be16bd>
 				</sv_graph>
 				<sv_data_source>
-					<hash_13002409b7ec504e2da09fd18852446c8fc3ac>
+					<hash_130024b7e3d47183e3a4d9158a9c2b21720333>
 						<field_name>name</field_name>
 						<data_template_id>hash_010024c152b413fc4e9d7ae0b195f2dbf52741</data_template_id>
-						<sequence>3</sequence>
-						<text>|host_description| - Flow Sessions |query_NodeDescr|/|query_SPUSlot|</text>
-					</hash_13002409b7ec504e2da09fd18852446c8fc3ac>
+						<sequence>5</sequence>
+						<text>|host_description| - SPU Flow Sessions |query_NodeDescr|/|query_SPUSlot|/|query_SPUIndex|</text>
+					</hash_130024b7e3d47183e3a4d9158a9c2b21720333>
 				</sv_data_source>
 			</hash_1100244608e05a155a987ca38de0227b0d1854>
 			<hash_1100245b6633390447748ffaf10b24eb604963>
@@ -13565,19 +13565,19 @@
 					</item_001>
 				</rrd>
 				<sv_graph>
-					<hash_12002487e44f5809e3226462ae45fea4e3b871>
+					<hash_1200248d357643b3dea4b416c54d5076070a7c>
 						<field_name>title</field_name>
 						<sequence>1</sequence>
-						<text>|host_description| - |query_NodeDescr| Slot |query_SPUSlot| SPU - CP Sessions</text>
-					</hash_12002487e44f5809e3226462ae45fea4e3b871>
+						<text>|host_description| - |query_NodeDescr| SPU |query_SPUSlot|/|query_SPUIndex| - CP Sessions</text>
+					</hash_1200248d357643b3dea4b416c54d5076070a7c>
 				</sv_graph>
 				<sv_data_source>
-					<hash_1300242424e64e2d69585706a0abb662c95255>
+					<hash_130024a5a0ddf71bb6d74a7862b6abbdb170dd>
 						<field_name>name</field_name>
 						<data_template_id>hash_010024a5322501b3d848fffba833edbe7c4f2c</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - CP Sessions ps SPU |query_NodeDescr|/|query_SPUSlot|</text>
-					</hash_1300242424e64e2d69585706a0abb662c95255>
+						<sequence>3</sequence>
+						<text>|host_description| - SPU CP Sessions |query_NodeDescr|/|query_SPUSlot|/|query_SPUIndex|</text>
+					</hash_130024a5a0ddf71bb6d74a7862b6abbdb170dd>
 				</sv_data_source>
 			</hash_1100245b6633390447748ffaf10b24eb604963>
 		</graphs>
@@ -13693,7 +13693,7 @@
 		<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 		<graphs>
 			<hash_1100243a82273095956ce09b09d9e3e6012fd1>
-				<name>CPU Utalization</name>
+				<name>CPU Utilization</name>
 				<graph_template_id>hash_000024391d35380210b8f4ebf97c9d4e9f3859</graph_template_id>
 				<rrd>
 					<item_000>
@@ -13703,19 +13703,19 @@
 					</item_000>
 				</rrd>
 				<sv_graph>
-					<hash_120024294a1d8cb889a4d35dee8e4a74f112ce>
+					<hash_120024ab94a76ba6bd4e593665eb08f7ef0b08>
 						<field_name>title</field_name>
-						<sequence>2</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| Utalization</text>
-					</hash_120024294a1d8cb889a4d35dee8e4a74f112ce>
+						<sequence>3</sequence>
+						<text>|host_description| - |query_jnxOperatingDescr| Utilization</text>
+					</hash_120024ab94a76ba6bd4e593665eb08f7ef0b08>
 				</sv_graph>
 				<sv_data_source>
-					<hash_13002475d600a487528f0f598f979b7bcaf9f0>
+					<hash_1300246940e529c2532e41c9efe26c5dd85691>
 						<field_name>name</field_name>
 						<data_template_id>hash_010024bf06a07cf1e0bd4a3fae0c226288a64d</data_template_id>
-						<sequence>2</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| Utalization</text>
-					</hash_13002475d600a487528f0f598f979b7bcaf9f0>
+						<sequence>3</sequence>
+						<text>|host_description| - |query_jnxOperatingDescr| Utilization</text>
+					</hash_1300246940e529c2532e41c9efe26c5dd85691>
 				</sv_data_source>
 			</hash_1100243a82273095956ce09b09d9e3e6012fd1>
 			<hash_1100247d347af9bfb56488d7230c7627116c6f>
@@ -13771,18 +13771,18 @@
 				</sv_data_source>
 			</hash_110024cec4380ad96af82ea33ac375e9f7097e>
 			<hash_11002438385238beb5dcbc4fdeb217b999b60a>
-				<name>Memory Utalization</name>
+				<name>Memory Utilization</name>
 				<graph_template_id>hash_000024855695691d163a47ccddf6988812e651</graph_template_id>
 				<rrd>
 					<item_000>
-						<snmp_field_name>jnxOperatingMemory</snmp_field_name>
-						<data_template_id>hash_010024846a1663afbea751627f1fdb601f7f75</data_template_id>
-						<data_template_rrd_id>hash_08002416b0a82ed33a3624d0e2b1d902202f5a</data_template_rrd_id>
-					</item_000>
-					<item_001>
 						<snmp_field_name>jnxOperatingBuffer</snmp_field_name>
 						<data_template_id>hash_010024846a1663afbea751627f1fdb601f7f75</data_template_id>
 						<data_template_rrd_id>hash_080024c49add1179d2d2a8ee6f8b95a24ec4a5</data_template_rrd_id>
+					</item_000>
+					<item_001>
+						<snmp_field_name>jnxOperatingMemory</snmp_field_name>
+						<data_template_id>hash_010024846a1663afbea751627f1fdb601f7f75</data_template_id>
+						<data_template_rrd_id>hash_08002416b0a82ed33a3624d0e2b1d902202f5a</data_template_rrd_id>
 					</item_001>
 				</rrd>
 				<sv_graph>
@@ -13810,7 +13810,7 @@
 		<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 		<graphs>
 			<hash_110024342e246ae9d1fa86eeedb5d9d88a8236>
-				<name>CPU Utalization</name>
+				<name>CPU Utilization</name>
 				<graph_template_id>hash_000024391d35380210b8f4ebf97c9d4e9f3859</graph_template_id>
 				<rrd>
 					<item_000>
@@ -13820,23 +13820,23 @@
 					</item_000>
 				</rrd>
 				<sv_graph>
-					<hash_12002464cf5b0c3d38b025b64429685d56110c>
+					<hash_1200240af3f8dc1658431634c3d5c338735167>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| Utalization</text>
-					</hash_12002464cf5b0c3d38b025b64429685d56110c>
+						<sequence>2</sequence>
+						<text>|host_description| - |query_jnxOperatingDescr| Utilization</text>
+					</hash_1200240af3f8dc1658431634c3d5c338735167>
 				</sv_graph>
 				<sv_data_source>
-					<hash_130024f240bde5e42e1bfae43830f6e98fc7cb>
+					<hash_130024f92ac91c4cd4d731cd9d7f8f71554814>
 						<field_name>name</field_name>
 						<data_template_id>hash_010024bf06a07cf1e0bd4a3fae0c226288a64d</data_template_id>
-						<sequence>1</sequence>
-						<text>|host_description| - |query_jnxOperatingDescr| Utalization</text>
-					</hash_130024f240bde5e42e1bfae43830f6e98fc7cb>
+						<sequence>2</sequence>
+						<text>|host_description| - |query_jnxOperatingDescr| Utilization</text>
+					</hash_130024f92ac91c4cd4d731cd9d7f8f71554814>
 				</sv_data_source>
 			</hash_110024342e246ae9d1fa86eeedb5d9d88a8236>
 			<hash_1100245ef56ce88873fcc6b621eb0dacb5f032>
-				<name>Memory Utalization</name>
+				<name>Memory Utilization</name>
 				<graph_template_id>hash_000024855695691d163a47ccddf6988812e651</graph_template_id>
 				<rrd>
 					<item_000>
