@@ -33,13 +33,13 @@
                         <source>value</source>
                         <direction>output</direction>
                         <oid>.1.3.6.1.4.1.2636.3.5.2.1.4</oid>
-		</Packets>
-		<Bytes>
+                </Packets>
+                <Bytes>
                         <name>Bytes Filtered</name>
                         <method>walk</method>
                         <source>value</source>
                         <direction>output</direction>
                         <oid>.1.3.6.1.4.1.2636.3.5.2.1.5</oid>
-		</Bytes>
+                </Bytes>
         </fields>
 </interface>

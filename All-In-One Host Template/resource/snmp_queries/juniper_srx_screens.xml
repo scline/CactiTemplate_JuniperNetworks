@@ -3,7 +3,7 @@
     <oid_index>.1.3.6.1.4.1.2636.3.39.1.8.1.1.1.1.1</oid_index>
     <index_order>Index</index_order>
     <oid_index_parse>OID/REGEXP:^.*\.2636\.3\.39\.1\.8\.1\.1\.1\.1\.[0-9]{1,3}\.(.*)$</oid_index_parse>
-    
+
     <fields>
         <Index>
             <name>Index</name>
@@ -270,5 +270,5 @@
             <oid>.1.3.6.1.4.1.2636.3.39.1.8.1.1.1.1.47</oid>
         </jnxJsScreenMonIcmpMalIcmpv6>
     </fields>
-    
+
 </screen_stats>

@@ -6,39 +6,39 @@
         <index_order>Index</index_order>
 
         <fields>
-		<Index>
-			<name>Index</name>
-			<source>index</source>
-			<direction>input</direction>
-		</Index>
-		<NodeDescr>
+                <Index>
+                        <name>Index</name>
+                        <source>index</source>
+                        <direction>input</direction>
+                </Index>
+                <NodeDescr>
                         <name>Cluster Names</name>
                         <method>walk</method>
                         <source>value</source>
                         <direction>input</direction>
                         <oid>1.3.6.1.4.1.2636.3.39.1.12.1.4.1.2</oid>
-		</NodeDescr>
-		<CurrentTotalSession>
+                </NodeDescr>
+                <CurrentTotalSession>
                         <name>Current Sessions</name>
                         <method>walk</method>
                         <source>value</source>
                         <direction>output</direction>
                         <oid>.1.3.6.1.4.1.2636.3.39.1.12.1.4.1.3</oid>
-		</CurrentTotalSession>
-		<MaxTotalSession>
+                </CurrentTotalSession>
+                <MaxTotalSession>
                         <name>Total Sessions</name>
                         <method>walk</method>
                         <source>value</source>
                         <direction>output</direction>
                         <oid>.1.3.6.1.4.1.2636.3.39.1.12.1.4.1.4</oid>
-		</MaxTotalSession>
-		<SessionPerSecond>
+                </MaxTotalSession>
+                <SessionPerSecond>
                         <name>Sessions Per Second</name>
                         <method>walk</method>
                         <source>value</source>
                         <direction>output</direction>
                         <oid>.1.3.6.1.4.1.2636.3.39.1.12.1.4.1.5</oid>
-		</SessionPerSecond>
+                </SessionPerSecond>
         </fields>
 
 </cp>
